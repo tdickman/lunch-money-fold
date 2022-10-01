@@ -4,10 +4,11 @@ import requests
 
 lunch_money_asset_id = os.environ["LUNCH_MONEY_FOLD_ASSET_ID"]
 lunch_money_access_token = os.environ["LUNCH_MONEY_ACCESS_TOKEN"]
+fold_session_id = os.environ["FOLD_SESSIONID"]
 
 # Get Transactions
 start_date = "2022-09-01"
-resp = requests.get("https://api.foldapp.com/v1/my/transactions", headers={"X-cfc-sessionid": os.environ["FOLD_SESSIONID"]})
+resp = requests.get("https://api.foldapp.com/v1/my/transactions", headers={"X-cfc-sessionid": fold_session_id})
 fold_transactions = resp.json()["transactions"]
 transactions_to_submit = []
 for tx in reversed(fold_transactions):
