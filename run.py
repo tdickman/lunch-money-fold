@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 def main():
     load_dotenv()
     lunch_money_asset_id = os.getenv("LUNCH_MONEY_ASSET_ID")
-    lunch_money_access_token = os.getenv("LUNCH_MONEY_ACCESS_TOKEN") 
+    lunch_money_access_token = os.getenv("LUNCH_MONEY_ACCESS_TOKEN")
     fold_session_id = os.getenv("FOLD_SESSION_ID")
 
     # Get Transactions
