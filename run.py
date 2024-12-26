@@ -4,6 +4,7 @@ import wmill
 
 
 def main():
+    # AI! Move these to a .env file
     lunch_money_asset_id = wmill.get_variable("u/admin/lunch_money_fold_asset_id")
     lunch_money_access_token = wmill.get_variable("u/admin/lunch_money_access_token")
     fold_session_id = wmill.get_variable("u/admin/fold_sessionid")
